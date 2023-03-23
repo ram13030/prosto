@@ -1,0 +1,67 @@
+@use 'mixin' as *;
+
+.fast-process {
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fast-process-info {
+    max-width: 600px;
+}
+
+.fast-cards {
+    margin-top: 47px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fast-card {
+    max-width: 242px;
+}
+
+.fast-card-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #2A2C1F;
+}
+
+.fast-btn {
+    cursor: pointer;
+    padding: 13px 25px;
+    color: #2A2C1F;
+    border: 1px solid #E7E8E3;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+
+        &:hover {
+            color: #CF6F49;
+            border: 1px solid #CF6F49;
+            transition: 0.5s;
+        }
+}
+
+.fast-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2A2C1F;
+    max-width: 101px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 24px;
+    color: #2A2C1F;
+    background-image: url(../images/card-link-ic.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+}
+
+.fast-link:hover {
+    color: #CF6F49;
+    border-radius: 6px;
+    transition: 0.5s;
+}

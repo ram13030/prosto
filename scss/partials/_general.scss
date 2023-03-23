@@ -1,0 +1,75 @@
+@use 'mixin' as mix;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #65665C;
+  font-size: 16px;
+  background: #fff;
+  line-height: 24px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  max-width: 1312px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+@mixin make-cols {
+  @for $i from 1 through 12 {
+    &-#{$i} {
+      width: $i / 12 * 100%;
+      padding: 0 16px;
+    }
+  }
+}
+
+.col {
+  @include make-cols;
+}
+
+@include mix.sm {
+  .col-sm {
+    @include make-cols;
+  }
+}
+
+@include mix.md {
+  .col-md {
+    @include make-cols;
+  }
+}
+
+@include mix.lg {
+  .col-lg {
+    @include make-cols;
+  }
+}
+
+@include mix.xl {
+  .col-xl {
+    @include make-cols;
+  }
+}

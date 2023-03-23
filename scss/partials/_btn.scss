@@ -1,0 +1,52 @@
+@use 'var' as *;
+
+.btn {
+  background: $brown;
+  color: $white;
+  border: 1px solid $brown;
+  border-radius: 6px;
+    &:hover {
+      background: $white;
+      color: $brown;
+      border: 1px solid $brown;
+      transition: 0.4s;
+    }
+
+  &_md {
+    font-size: 16px;
+    padding: 9px 27px;
+  }
+
+  &_lg {
+    font-size: 20px;
+    padding: 9px 18px 13px;
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid $greyLight;
+  color: $dark;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+
+  &:hover {
+    border: 1px solid $brown;
+    color: $brown;
+    transition: 0.4s;
+  }
+
+  &_icon {
+    padding: 9px 21px 9px 45px;
+    background: url("../images/ic-bag.svg") 21px center no-repeat;
+  }
+
+  &_lg {
+    padding: 13px 25px;
+  }
+}
+
+.header__btn-outline {
+  margin-right: 20px;
+}

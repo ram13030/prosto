@@ -1,0 +1,57 @@
+@use 'var' as *;
+
+$icons: (house, receipt, key, price, description);
+
+.section-works {
+  text-align: center;
+
+  .row {
+    justify-content: center;
+  }
+}
+
+.title-work_mt {
+  margin-top: 110px;
+}
+
+.text-work_size {
+  font-size: 18px;
+  line-height: 27px;
+  max-width: 754px;
+  margin: 21px auto;
+}
+
+.card {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 49px 34px 22px;
+  border: 1px solid $apricotColor;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+
+    &:hover {
+      border: 1px solid $brown;
+      transition: 0.5s;
+    }
+}
+
+%ic {
+  content: "";
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: $apricotColor;
+  border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto 24px;
+}
+
+@each $icon in $icons {
+  .ic-#{$icon}::before {
+    background-image: url("../images/#{$icon}.svg");
+    @extend %ic;
+  }
+}

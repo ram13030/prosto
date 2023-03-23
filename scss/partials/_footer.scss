@@ -1,0 +1,25 @@
+@use '_var.scss' as *;
+
+.footer {
+    margin-top: 153px;
+    background-color: #eee;
+    padding: 25px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer__ic {
+    display: inline-block;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: $greyDark;
+}

@@ -1,0 +1,22 @@
+@use '_var.scss' as *;
+
+.card-link {
+      max-width: 101px;
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto;
+      text-decoration: none;
+      font-weight: 700;
+      line-height: 24px;
+      color: #2A2C1F;
+      background-image: url(../images/card-link-ic.svg);
+      background-repeat: no-repeat;
+      background-position: right center;
+      padding-right: 20px;
+        
+        &:hover {
+          color: $brown;
+          border-radius: 6px;
+          transition: 0.5s;
+        }
+    }
